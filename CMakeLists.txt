@@ -14,6 +14,7 @@ set(SOURCES
     src/main.cpp
     src/PlatformLayer/platform_glfw.cpp
     src/Input/input_glfw.cpp
+    src/Renderer/shader.cpp
 )
 
 add_executable(my_game ${SOURCES})
@@ -23,6 +24,7 @@ target_include_directories(my_game PRIVATE
     ${GLFW_INCLUDE_DIRS}
     src/PlatformLayer
     src/Input
+    src/Renderer
 )
 
 # Link libraries
