@@ -1,6 +1,10 @@
 #include "platform.h"
-#include <GLFW/glfw3.h> // for key definitions
+#include "input.h"
 #include <iostream>
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
 
 int main() {
     if (!Platform::Init()) {
@@ -15,22 +19,24 @@ int main() {
         return -1;
     }
 
-    // Main loop
+    Input::Init();
+
     while (!Platform::WindowShouldClose(window)) {
         Platform::PollEvents();
+        Input::PollEvents();
 
-        if (Platform::IsKeyDown(GLFW_KEY_ESCAPE)) break;
+        if (Input::IsKeyPressed(Input::KeyCode::Escape)) break;
 
-        // Clear screen (OpenGL for now)
         glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Swap buffers
         glfwSwapBuffers((GLFWwindow*)window->handle);
     }
 
+    Input::Shutdown();
     Platform::DestroyWindow(window);
     Platform::Shutdown();
     return 0;
 }
+
 
