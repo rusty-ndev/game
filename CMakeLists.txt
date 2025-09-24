@@ -15,6 +15,7 @@ set(SOURCES
     src/PlatformLayer/platform_glfw.cpp
     src/Input/input_glfw.cpp
     src/Renderer/shader.cpp
+    src/Renderer/camera.cpp
 )
 
 add_executable(my_game ${SOURCES})
@@ -22,6 +23,8 @@ add_executable(my_game ${SOURCES})
 # Add include paths
 target_include_directories(my_game PRIVATE
     ${GLFW_INCLUDE_DIRS}
+    ${GLEW_INCLUDE_DIRS}
+    /usr/include 
     src/PlatformLayer
     src/Input
     src/Renderer

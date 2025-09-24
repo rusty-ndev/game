@@ -1,10 +1,10 @@
 Platform Layer → window + input + timers.
 
 i)   Window + Context creation 
-    - using GLFW to open windows 
+    - using GLFW/GLEW to open windows 
 
 ii)  Input Handling 
-    - also using GLFW
+    - also using GLFW/GLEW
 
 iii) Timing System 
 
