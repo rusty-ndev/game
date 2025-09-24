@@ -1,0 +1,25 @@
+Platform Layer → window + input + timers.
+
+i)   Window + Context creation 
+
+ii)  Input Handling 
+
+iii) Timing System 
+
+iv)  Filesystem 
+
+Renderer (triangle on screen).
+
+Memory System (arena allocators).
+
+Job System (parallel updates).
+
+Entity System (ECS or data containers).
+
+Asset Loader (binary models/textures).
+
+Physics (basic collisions).
+
+Animation.
+
+Audio.
