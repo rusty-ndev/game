@@ -1,3 +1,0 @@
-/home/naeem/Projects/game/build/CMakeFiles/my_game.dir
-/home/naeem/Projects/game/build/CMakeFiles/edit_cache.dir
-/home/naeem/Projects/game/build/CMakeFiles/rebuild_cache.dir

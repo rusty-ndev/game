@@ -1,0 +1,20 @@
+# CMake build folder
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/*.cmake
+/*.Makefile
+
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.a
+*.dll
+
+# IDE/editor files
+*.swp
+*.vscode/
+
